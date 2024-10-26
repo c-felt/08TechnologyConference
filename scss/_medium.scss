@@ -1,0 +1,39 @@
+/* NAVIGATION STUFF GOES HERE  */
+#hamburgerBtn {display: none;} //this gets rid of hamburger menu
+#primaryNav {display:flex; justify-content: center;} //this puts the links in a line again
+
+header {
+    grid-template-columns: 50px auto auto;
+    display: grid;
+    align-items: center;
+}
+nav {
+    ul li a {
+        border: none;
+        font-size: .85rem;
+        font-weight: $normalWeight;
+        padding: .5rem 1.2rem;
+        transition: background 0.5s linear;
+        text-align: center;
+    }
+    ul li a:hover {
+        background-color: $primaryColor;
+        color: white;
+    }
+}
+#logo {
+    display: block;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+//new
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.allCards .flip-card {
+    margin: 15px;
+}
