@@ -11,7 +11,6 @@ html {
     box-sizing: border-box;
 } // end all elements
 
-
 /* --------------------------- BODY --------------------------- */
 body {
     font-family: $defaultFont;
@@ -20,9 +19,7 @@ body {
     background-color: $primaryColor;
 }
 
-
 /* --------------------------- HEADER --------------------------- */
-// #headerWrapper {border-bottom: 1px solid black;}
 header {
     display: grid;
     grid-template-columns: 50px auto 44px;
@@ -35,7 +32,6 @@ header {
         color: $primaryColor;
     }
 } // end header
-
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 #hamburgerBtn {
@@ -60,7 +56,6 @@ header {
         top: 62%;
     }
 } //end of hamburger menu
-
 #hamburgerBtn.open {
     .top {
         transform: rotate(45deg);
@@ -75,7 +70,6 @@ header {
         left: 20%;
     }
 } //end of "open", this "open" code is creating an x like character by rotating the border lines into an x, and placing it right
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -90,10 +84,12 @@ nav ul {
         text-align: center;
     }
     li.active a {
-        color: $secondaryColor;
+        background-color: $secondaryColor;
+        color: $whiteColor;
+        font-weight: $normalWeight;
+        border-radius: 8px;
     }
 }
-
 nav ul.open {
     display: block;
 } //this code here shows the "hidden" nav a links when the botton is clicked
@@ -103,7 +99,7 @@ main {
     .title {
         padding: 1rem $gutter 1rem $gutter;
         margin-bottom: 50px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $whiteColor;
         font-weight: $normalWeight;
         text-align: center;
@@ -136,10 +132,11 @@ main {
         left: 10px;
         right: 0;
         color: white;
+        top: 40%;
         h3 {
             text-shadow: 0 0 2px #000;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
         p {
             color: white;
@@ -150,14 +147,6 @@ main {
 }//end of hero stuff css
 
 /* --------------------------- FLIP CARDS --------------------------- */
-// .allCards {
-//     display: flex;
-// }
-
-// .allCards .flip-card {
-//     margin: 15px;
-// }
-
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -167,7 +156,6 @@ main {
     display: block;
     // margin: 0 auto;
   }
-  
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -177,11 +165,9 @@ main {
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
-  
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -189,19 +175,18 @@ main {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
   .flip-card-front {
     background-color: #bbb;
-    color: black;
+    // color: $whiteColor;
   }
-  
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: $accentColor;
     color: white;
     transform: rotateY(180deg);
-
   }
-  
+  .cardText {
+    color: white;
+  }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
@@ -211,8 +196,8 @@ main {
 footer {
     font-size: .85rem;
     padding: 1rem $gutter;
-    color: gray;
+    color: #d1d1d1;
     text-align: center;
     line-height: $leading;
-    a {color: gray;}
+    a {color: #d1d1d1;}
 }// end footer

@@ -386,7 +386,10 @@ nav ul li a {
   text-align: center;
 }
 nav ul li.active a {
-  color: #303030;
+  background-color: #303030;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 nav ul.open {
@@ -397,7 +400,7 @@ nav ul.open {
 main .title {
   padding: 1rem 10px 1rem 10px;
   margin-bottom: 50px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   font-weight: 700;
   text-align: center;
@@ -430,11 +433,12 @@ main p {
   left: 10px;
   right: 0;
   color: white;
+  top: 40%;
 }
 .hero div h3 {
   text-shadow: 0 0 2px #000;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .hero div p {
   color: white;
@@ -475,13 +479,16 @@ main p {
 
 .flip-card-front {
   background-color: #bbb;
-  color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #202A44;
   color: white;
   transform: rotateY(180deg);
+}
+
+.cardText {
+  color: white;
 }
 
 /* --------------------------- FOOTER --------------------------- */
@@ -492,12 +499,12 @@ main p {
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: gray;
+  color: #d1d1d1;
   text-align: center;
   line-height: 150%;
 }
 footer a {
-  color: gray;
+  color: #d1d1d1;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -510,25 +517,33 @@ footer a {
     justify-content: center;
   }
   header {
-    grid-template-columns: 50px auto auto;
-    display: grid;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  header > span {
+    display: none;
+  }
+  nav {
+    margin-top: 10px;
   }
   nav ul li a {
     border: none;
     font-size: 0.85rem;
     font-weight: 700;
-    padding: 0.5rem 1.2rem;
+    padding: 1.3rem 1.2rem;
     transition: background 0.5s linear;
     text-align: center;
   }
   nav ul li a:hover {
     background-color: #181818;
     color: white;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
   }
   #logo {
     display: block;
-    padding-top: 25px;
     margin: 0 auto;
   }
   .allCards {
