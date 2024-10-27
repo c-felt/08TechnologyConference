@@ -491,6 +491,24 @@ main p {
   color: white;
 }
 
+/* --------------------------- BUTTONS ON CARDS --------------------------- */
+.btnPrice {
+  background-color: #fcd494;
+  display: block;
+  margin: 20px auto;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 8px;
+  border-color: #fcd494;
+  cursor: pointer;
+}
+
+.btnPrice:hover {
+  transform: translateY(5px);
+  transition: transform 0.2s ease-in-out;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
   background-color: #0d0d0d;
