@@ -117,6 +117,12 @@ main {
         color: #333;
         line-height: $leading;
     }
+    .subtitle {
+        color: $whiteColor;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 50px
+    }
 }// end main
 
 /* --------------------------- HERO VIDEO --------------------------- */

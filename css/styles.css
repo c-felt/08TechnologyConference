@@ -418,6 +418,12 @@ main p {
   color: #333;
   line-height: 150%;
 }
+main .subtitle {
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 50px;
+}
 
 /* --------------------------- HERO VIDEO --------------------------- */
 .hero {
